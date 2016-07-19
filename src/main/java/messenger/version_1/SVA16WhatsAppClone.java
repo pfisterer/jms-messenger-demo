@@ -51,7 +51,7 @@ public class SVA16WhatsAppClone {
 			consumer.setMessageListener(message -> {
 				try {
 					TextMessage textMessage = (TextMessage) message;
-					log.info("{}: {}", textMessage.getJMSMessageID(), textMessage.getText());
+					log.info("Received {} (source: {})", textMessage.getText(), textMessage.getJMSMessageID());
 				} catch (Exception e) {
 					log.warn("Exception: {}", e);
 				}

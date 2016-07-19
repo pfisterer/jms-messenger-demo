@@ -37,8 +37,8 @@ public class SVA16WhatsAppClone {
 		// Compute a topic name based on the members of the chat
 		SortedSet<String> chatMembers = new TreeSet<>();
 		chatMembers.add("Dennis");
-		chatMembers.add("Bjarne");
-		chatMembers.add("Kaspar");
+		chatMembers.add("Barack Obama");
+		chatMembers.add("Angela Merkel");
 		String topic = "chat-" + DigestUtils.md5Hex(chatMembers.stream().collect(Collectors.joining(", ")));
 		log.info("Using topic name: {}", topic);
 		Topic demoTopic = session.createTopic(topic);
